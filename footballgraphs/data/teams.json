@@ -1,0 +1,47 @@
+nfl = [
+	// American Football Conference
+	{ conference:"AFC", div:"North", name: "Baltimore Ravens", img: "bal.png"},
+	{ conference:"AFC", div:"North", name: "Cincinnati Bengals", img: "cin.png"},
+	{ conference:"AFC", div:"North", name: "Cleveland Browns", img: "cle.png"},
+	{ conference:"AFC", div:"North", name: "Pittsburgh Steelers", img: "pit.png"},
+
+	{ conference:"AFC", div:"South", name: "Houston Texans", img: "hou.png"},
+	{ conference:"AFC", div:"South", name: "Indianapolis Colts", img: "ind.png"},
+	{ conference:"AFC", div:"South", name: "Jacksonville Jaguars", img: "jac.png"},
+	{ conference:"AFC", div:"South", name: "Tennessee Titans", img: "ten.png"},
+
+
+	{ conference:"AFC", div:"East", name: "Buffalo Bills", img: "buf.png"},
+	{ conference:"AFC", div:"East", name: "Miami Dolphins", img: "mia.png"},
+	{ conference:"AFC", div:"East", name: "New England Patriots", img: "ne.png"},
+	{ conference:"AFC", div:"East", name: "New York Jets", img: "nyj.png"},
+
+
+	{ conference:"AFC", div:"West", name: "Denver Broncos", img: "den.png"},
+	{ conference:"AFC", div:"West", name: "Kansas City Chiefs", img: "kc.png"},
+	{ conference:"AFC", div:"West", name: "Oakland Raiders", img: "oak.png"},
+	{ conference:"AFC", div:"West", name: "San Diego Chargers", img: "sd.png"},
+
+
+	// National Footnball Conference
+	{ conference:"NFC", div:"North", name: "Chicago Bears", img: "chi.png"},
+	{ conference:"NFC", div:"North", name: "Detroit Lions", img: "det.png"},
+	{ conference:"NFC", div:"North", name: "Green Bay Packers", img: "gb.png"},
+	{ conference:"NFC", div:"North", name: "Minnesota Vikings", img: "min.png"},
+
+	{ conference:"NFC", div:"South", name: "Atlanta Falcons", img: "atl.png"},
+	{ conference:"NFC", div:"South", name: "Carolina Panthers", img: "car.png"},
+	{ conference:"NFC", div:"South", name: "New Orleans Saints", img: "no.png"},
+	{ conference:"NFC", div:"South", name: "Tampa Bay Buccaneers", img: "tb.png"},
+
+	{ conference:"NFC", div:"East", name: "Dallas Cowboys", img: "dal.png"},
+	{ conference:"NFC", div:"East", name: "New York Giants", img: "nyg.png"},
+	{ conference:"NFC", div:"East", name: "Philadelphia Eagles", img: "phi.png"},
+	{ conference:"NFC", div:"East", name: "Washington Redskins", img: "was.png"},
+
+	{ conference:"NFC", div:"West", name: "Arizona Cardinals", img: "ari.png"},
+	{ conference:"NFC", div:"West", name: "San Francisco 49ers", img: "sf.png"},
+	{ conference:"NFC", div:"West", name: "Seattle Seahawks", img: "sea.png"},
+	{ conference:"NFC", div:"West", name: "St. Louis Rams", img: "stl.png"},
+
+]

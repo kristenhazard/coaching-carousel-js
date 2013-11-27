@@ -1,0 +1,51 @@
+/* Fix Bootstrap so Non-Responsive*/
+.container {
+	max-width: none !important;
+	width: 1200px;
+}
+
+body {
+	background: lightgreen;
+}
+
+#visual-history {
+	
+	height: 620px;
+	width: 880px;
+	background: white;
+}
+
+#coaches {
+	background-color: white;
+	height: 620px;
+	overflow: auto;
+
+}
+
+.selected {
+	background-color: #11A1B4;
+	color: white;
+}
+
+#coaches li.selected ul {
+	margin-bottom: 0px;
+}
+
+.jobs {
+	border: none;
+	padding: 1px 0px 5px 15px;
+}
+.jobs p {
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+
+.role {
+	font-weight: 800;
+}
+.team {
+	font-weight: 100;
+	opacity: .7;
+}
+

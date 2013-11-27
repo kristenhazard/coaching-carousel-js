@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>NFL Coach History and Stories</title>
+	<link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css 
+">
+	<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+	<div class="container" ng-app="NFLHistory">
+		<h3>NFC Coach History (2013 - 1990)</h3>
+		<div class="row" ng-controller="CoachesCtrl">
+			<div class="col-xs-2">
+				<h4>Coaches</h4>
+				<ul id="coaches" class="list-group">
+					<li ng-class="{selected: $index==selectedCoach}"class="list-group-item" ng-repeat="coach in coaches" ng-click="selectCoach($index)">
+						{{coach.name}}
+						<ul ng-show="$index==selectedCoach" class="list-group">
+							<li class="jobs selected list-group-item" ng-repeat="job in coach.jobs">
+								<p class="role">{{job.year}} - {{job.role}}</p>
+								<p class="team">{{job.teamName}}</p>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<button ng-click="getAssociates()" class="btn">Associates</button>
+			</div>
+			<div class="col-xs-10">
+				<h4>Team Association Over Time</h4>
+				<svg id="visual-history">
+			
+				</svg>
+				<div class="row">
+					<button ng-click="erasePlot()" class="btn">Erase Plot</button>
+				</div>
+				
+			</div>
+		</div>
+		
+		
+	</div>
+	<!-- Temporary Data Injections -->
+	<script src="data/teams.json"></script>
+	<script src="data/coach_employments.json"></script>
+	<!-- Vendor Libraries -->
+	<script src="../vendor/jquery/jquery-2.0.3-min.js"></script>
+	<script src="../vendor/angular-1.0.7/angular.js"></script>
+	<script src="../vendor/snap/snap.svg.js"></script>
+	<!-- Application Code -->
+	<script src="scripts/app.js"></script>
+	<script src="scripts/plot.js"></script>
+	<script src="scripts/coaches.js"></script>
+	<script src="scripts/CoachCtrl.js"></script>
+	<script src="scripts/main.js"></script>
+</body>
+</html>
